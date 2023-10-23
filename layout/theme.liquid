@@ -1,0 +1,20 @@
+<html>
+<head>
+{% comment %} This tag allows shopify to inject scripts {% endcomment %}
+    {{content_for_header}}
+    {% comment %} Connect css stylesheet {% endcomment %}
+    
+</head>
+
+<body>
+    {% comment %} Render partial {% endcomment %}
+     {% render 'header' %}
+    
+{% comment %}This tag is where the template data is plugged in  {% endcomment %}
+    
+    {{content_for_layout}}
+
+    
+</body>
+
+</html>
